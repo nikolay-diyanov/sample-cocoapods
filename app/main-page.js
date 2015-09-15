@@ -8,13 +8,13 @@ function pageLoaded(args) {
 
 function crView(args) {
 
-	if (platform.device.os = "iOS") {
+	if (platform.device.os == "iOS") {
 		var spinnerView = MMMaterialDesignSpinner.alloc().initWithFrame(CGRectMake(0,0,40,40));
-    	spinnerView.lineWidth = 1.5;
-    	spinnerView.tintColor = UIColor.redColor();
+    		spinnerView.lineWidth = 1.5;
+    		spinnerView.tintColor = UIColor.redColor();
 
-    	spinnerView.startAnimating();
-    	args.view = spinnerView;
+    		spinnerView.startAnimating();
+    		args.view = spinnerView;
 	}
 }
 
