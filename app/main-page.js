@@ -10,7 +10,7 @@ function creatingView(args) {
 	if (platform.device.os == "iOS") {
 		var spinnerView = MMMaterialDesignSpinner.alloc().initWithFrame(CGRectMake(0,0,40,40));
     	spinnerView.lineWidth = 3.5;
-    	spinnerView.tintColor = UIColor.colorWithRedGreenBlueAlpha(0/255, 150/255, 136/255, 1);
+    	spinnerView.tintColor = UIColor.blueColor();
 
     	spinnerView.startAnimating();
     	args.view = spinnerView;
