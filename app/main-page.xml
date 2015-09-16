@@ -3,7 +3,7 @@
         <Label text="Tap the button" cssClass="title"/>
     	<Button text="TAP" tap="{{ tapAction }}" />
     	<ActivityIndicator ios:visibility="collapse" android:visibility="visible" busy="true"/>
-    	<Placeholder ios:visibility="visible" android:visibility="collapse" creatingView="crView"/>
+    	<Placeholder ios:visibility="visible" android:visibility="collapse" creatingView="creatingView"/>
     	<Label text="{{ message }}" cssClass="message" textWrap="true"/>
 	</StackLayout>
 </Page>

@@ -6,17 +6,16 @@ function pageLoaded(args) {
     page.bindingContext = vmModule.mainViewModel;
 }
 
-function crView(args) {
-
+function creatingView(args) {
 	if (platform.device.os == "iOS") {
 		var spinnerView = MMMaterialDesignSpinner.alloc().initWithFrame(CGRectMake(0,0,40,40));
-    		spinnerView.lineWidth = 1.5;
-    		spinnerView.tintColor = UIColor.redColor();
+    	spinnerView.lineWidth = 3.5;
+    	spinnerView.tintColor = UIColor.colorWithRedGreenBlueAlpha(0/255, 150/255, 136/255, 1);
 
-    		spinnerView.startAnimating();
-    		args.view = spinnerView;
+    	spinnerView.startAnimating();
+    	args.view = spinnerView;
 	}
 }
 
-exports.crView = crView;
+exports.creatingView = creatingView;
 exports.pageLoaded = pageLoaded;
