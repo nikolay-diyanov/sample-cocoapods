@@ -1,5 +1,8 @@
 {
   "nativescript": {
     "id": "org.nativescript.samplecocoapods"
+  },
+  "dependencies": {
+    "tns-core-modules": "1.3.0"
   }
 }
